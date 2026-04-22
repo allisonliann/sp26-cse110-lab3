@@ -4,4 +4,4 @@ http://127.0.0.1:5500/lab2/Lab2_Starter/index.html?name=Allison+Lian&meeting-dat
 
 # Lab 3 CSE 110
 
-GitHub Pages URl: https://github.com/allisonliann/sp26-cse110-lab3.git
+GitHub Pages URl: https://allisonliann.github.io/sp26-cse110-lab3/

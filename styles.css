@@ -1,0 +1,24 @@
+/*  ===================
+    Author: Allison Lian
+    Date: April 24, 2026
+    Description: Main stylesheet for Meeting Minutes page CSE 110 Lab 3
+    Meeting Minutes page 
+    =================== */
+
+/*  =================== 
+    CSS Variables (Custom Properties)
+    =================== */
+:root {
+  --color-primary: #3b5bdb;
+  --color-bg: hsl(210, 20%, 97%);
+  --font-main: "Inter", sans-serif;
+  --max-width: 900px;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg, #f5f5f5);
+  margin: 0;
+  padding: 20px;
+  color: var(--color-text, #2c3e50);
+}

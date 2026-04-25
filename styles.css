@@ -22,3 +22,86 @@ body {
   padding: 20px;
   color: var(--color-text, #2c3e50);
 }
+
+/*  =================== 
+    Google Font + Typography
+    =================== */
+
+/* Apply Google Font to body */
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/*Selector list - shared styles for all headings */
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+/*rgb() color format */
+h1 {
+  font-size: 2rem;
+  color: rgb(59, 91, 219); /* Primary color */
+  margin-bottom: 20px;
+}
+
+/* hex color format */
+h2 {
+  font-size: 1.5rem;
+  color: #3b5bdb; /* Primary color */
+  margin-top: 30px;
+}
+
+/* hsl() color format */
+h3 {
+  font-size: 1.2rem;
+  color: hsl(210, 20%, 40%); /* Darker shade of primary color */
+  margin-top: 20px;
+}
+
+/* rgba() color format */
+p {
+  font-size: 1rem;
+  color: rgba(44, 62, 80, 0.8); /* Text color with opacity */
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/*text-decoration on links */
+a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+/* :hover pseudo-class re-adds underlines */
+a:hover {
+  text-decoration: underline;
+}
+
+/* table cell typography */
+td,
+th {
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+th {
+  font-weight: 600;
+}
+
+footer p {
+  color: color(display-p3 0.2 0.3 0.5);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+caption {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: color-mix(in srgb, #3b5bdb 60%, white);
+  margin-bottom: 6px;
+}

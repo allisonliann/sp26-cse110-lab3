@@ -105,3 +105,67 @@ caption {
   color: color-mix(in srgb, #3b5bdb 60%, white);
   margin-bottom: 6px;
 }
+
+/*  =================== 
+    Box Model
+    =================== */
+
+/* Universal selector - border-box sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Margin */
+
+/* Margin longhand on h2 */
+h2 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/* Margin shorthand + auto-centering on .container */
+.container {
+  max-width: 900px;
+  margin: 0 auto; /* top/bottom 0, left/right auto */
+  width: 90%;
+}
+
+/* Padding */
+
+/* Padding longhand on header */
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Padding shorthand on td and th */
+td,
+th {
+  padding: 10px 16px;
+}
+
+/* Border */
+
+/* Border longhand on section */
+section {
+  border-style: solid;
+  border-color: #dde3f0;
+  border-width: 1px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  padding: 20px;
+}
+
+/* Border shorthand on table */
+table {
+  border: 2px solid hsl(220, 30%, 80%);
+  border-radius: 4px;
+  border-collapse: collapse;
+  width: 100%;
+}

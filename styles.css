@@ -286,3 +286,81 @@ img {
     padding: 12px;
   }
 }
+
+/*  =================== 
+    CSS Selectors
+    =================== */
+
+/* --- Class Selector (.class) --- */
+.container {
+  max-width: var(--max-width, 900px);
+}
+
+/* --- ID Selector (#id) --- */
+#meeting-title {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+}
+
+/* --- Attribute Selector ([attr=value]) --- */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+section p {
+  color: #444;
+}
+
+ul > li {
+  margin-bottom: 6px;
+}
+
+h2 ~ p {
+  margin-top: 4px;
+}
+
+h2 + p {
+  font-weight: 500;
+}
+
+table.goals-table {
+  width: 100%;
+  margin-top: 12px;
+}
+
+section:has(table) {
+  background-color: hsl(220, 30%, 80%);
+}
+
+.grid-item {
+  padding: 16px;
+
+  & h3 {
+    color: var(--color-primary, #3b5bdb);
+    margin-bottom: 8px;
+  }
+
+  & p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+  }
+}

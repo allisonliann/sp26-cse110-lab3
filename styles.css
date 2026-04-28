@@ -169,3 +169,58 @@ table {
   border-collapse: collapse;
   width: 100%;
 }
+
+/*  =================== 
+    Flexbox -- Nav
+    =================== */
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}
+
+/*  =================== 
+    CSS Grid -- Goals and Progress
+    =================== */
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  grid-template-areas: "goal1 goal2 goal3";
+  margin-top: 16px;
+}
+
+.grid-item {
+  background-color: rgba(60, 90, 220, 0.05);
+  border: 1px solid #dde3f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.grid-item h3 {
+  color: var(--color-primary, #3b5bdb);
+  margin-bottom: 8px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "goal1 goal2" "goal3 goal3";
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas: "goal1" "goal2" "goal3";
+  }
+}
